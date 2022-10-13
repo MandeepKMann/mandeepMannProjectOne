@@ -1,0 +1,30 @@
+@use "./variables";
+
+// Wrapper
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    min-width: 1260px;
+}
+
+button {
+    color: variables.$solidWhite;
+    background-color: variables.$darkBlue;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+        font-style: italic;
+
+    }
+
+    &:focus {
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    &.secondary {
+        color: variables.$blackTwo;
+        background-color: variables.$lightBlue;
+    }
+}
