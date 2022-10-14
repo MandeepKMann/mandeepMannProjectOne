@@ -1,7 +1,7 @@
 @use "./variables";
 
 // Pacifico Regular, Lato Regular, Lato Bold
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Catamaran:wght@600&family=Lato:wght@400;700&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Catamaran:wght@600&family=Lato:wght@400;700&family=Pacifico&display=swap");
 
 // Typography Styles
 html {
@@ -19,7 +19,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a.button {
     font-family: variables.$headingFont;
     font-weight: normal;
     color: variables.$darkBlue;
@@ -42,7 +43,6 @@ h3 {
 }
 
 h4{
-    color: variables.$solidWhite;
     font-size: 2rem;
     line-height: 2.9rem;
     letter-spacing: 0.125rem;
@@ -70,6 +70,7 @@ p {
         line-height: 1.2rem;
         letter-spacing: 0.085rem;
     }
+
 }
 
 button {

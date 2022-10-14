@@ -8,23 +8,40 @@
 }
 
 button {
-    color: variables.$solidWhite;
-    background-color: variables.$darkBlue;
+    color: variables.$blackTwo;
+    background-color: variables.$lightBlue;
     cursor: pointer;
-
-    &:hover {
-        text-decoration: underline;
-        font-style: italic;
-
-    }
-
+    
+    &:hover,
     &:focus {
         text-decoration: underline;
         font-style: italic;
     }
 
-    &.secondary {
-        color: variables.$blackTwo;
-        background-color: variables.$lightBlue;
+}
+
+a {
+    text-decoration: none;
+    
+    &.button {
+        color: variables.$solidWhite;
+        background-color: variables.$darkBlue;
+        cursor: pointer;
+        padding: 18px 36px;
+        
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            font-style: italic;
+        }       
     }
+}    
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
 }
