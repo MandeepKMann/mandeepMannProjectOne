@@ -303,15 +303,25 @@ p {
   letter-spacing: 0.1rem;
 }
 p.logo {
+  font-family: "Pacifico";
+  font-weight: normal;
   font-size: 1.5rem;
   line-height: 1.2rem;
   letter-spacing: 0.085rem;
 }
 
 button {
+  font-family: "Pacifico";
+  font-weight: normal;
+  font-size: 1.35rem;
   text-align: center;
   line-height: 1.6rem;
   letter-spacing: 0.07rem;
+}
+
+a.button {
+  font-size: 1.35rem;
+  text-align: center;
 }
 
 nav {
@@ -320,17 +330,25 @@ nav {
   line-height: 1.45rem;
   letter-spacing: 0.07rem;
 }
+nav .navUl {
+  text-transform: uppercase;
+}
 
 .wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   min-width: 1260px;
 }
 
 button {
   color: #161515;
-  background-color: #ccedfb;
+  background-color: #C6D9FB;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 35px;
+  border: none;
 }
 button:hover, button:focus {
   text-decoration: underline;
@@ -344,7 +362,11 @@ a.button {
   color: #ffffff;
   background-color: #1a315c;
   cursor: pointer;
-  padding: 18px 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 35px;
+  border: none;
 }
 a.button:hover, a.button:focus {
   text-decoration: underline;
@@ -358,4 +380,159 @@ img {
 
 ul {
   list-style: none;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header.index {
+  background-image: url(../textilee-assets/header-home.jpg);
+  position: relative;
+}
+header.index h2 {
+  max-width: 550px;
+  margin-top: 100px;
+}
+header.index .headerImgContainer {
+  position: absolute;
+  bottom: -135px;
+}
+
+.navBar {
+  width: 100%;
+  height: auto;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navBar .wrapper .navUl {
+  width: 38%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navBar .wrapper .navUl li {
+  padding: 5px 15px;
+}
+
+.navToggle,
+.navToggleLabel {
+  display: none;
+}
+
+.about {
+  background-color: #ccedfb;
+  padding: 200px 0 100px 0;
+}
+.about .aboutContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about .aboutContentContainer .aboutTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 53.4%;
+}
+.about .aboutContentContainer .aboutImgContainer {
+  -webkit-box-shadow: -15px 15px 0 #0cadc0;
+          box-shadow: -15px 15px 0 #0cadc0;
+}
+
+.gallerySection {
+  background-color: #21404F;
+}
+.gallerySection .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 100px 0;
+  margin: 0;
+}
+
+.gallery li {
+  width: calc(33.3333333333% - 20px);
+}
+
+.gallery img {
+  width: 100%;
+}
+
+section.links {
+  background-color: #ccedfb;
+}
+
+.linksUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0 50px 0;
+  margin: 0;
+}
+.linksUl li {
+  width: 50%;
+  padding: 0 0 50px 0;
+}
+.linksUl li p {
+  max-width: 535px;
+  margin-left: 60px;
+}
+
+.iconTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.iconTitle h4 {
+  text-align: left;
+}
+.iconTitle .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  background-color: #0cadc0;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
 }

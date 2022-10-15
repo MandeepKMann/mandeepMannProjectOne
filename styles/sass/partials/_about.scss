@@ -1,0 +1,20 @@
+@use "./variables";
+
+// About Styles
+.about {
+    background-color: variables.$lightBlue;
+    padding: 200px 0 100px 0;
+        .aboutContentContainer {
+            display: flex;
+            justify-content: space-between;
+                .aboutTextContainer {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 53.4%;
+                    
+                }
+                .aboutImgContainer {
+                    box-shadow: -15px 15px 0 variables.$turquoise;
+                }
+        }
+}

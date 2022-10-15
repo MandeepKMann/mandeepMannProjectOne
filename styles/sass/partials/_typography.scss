@@ -66,6 +66,8 @@ p {
     letter-spacing: 0.1rem;
 
     &.logo {
+        font-family: variables.$headingFont;
+        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.2rem;
         letter-spacing: 0.085rem;
@@ -74,9 +76,17 @@ p {
 }
 
 button {
+    font-family: variables.$headingFont;
+    font-weight: normal;
+    font-size: 1.35rem;
     text-align: center;
     line-height: 1.6rem;
     letter-spacing: 0.07rem;
+}
+
+a.button {
+    font-size: 1.35rem;
+    text-align: center;
 }
 
 nav {
@@ -84,4 +94,7 @@ nav {
     text-align: center;
     line-height: 1.45rem;
     letter-spacing: 0.07rem;
+        .navUl {
+            text-transform: uppercase;
+        }
 }

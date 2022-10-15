@@ -1,4 +1,14 @@
+// Basic Styles
 @use "./partials/setup";
 @use "./partials/variables";
 @use "./partials/typography";
 @use "./partials/global";
+
+// Global Content Styles
+@use "./partials/header";
+
+
+// About Content Styles
+@use "./partials/about";
+@use "./partials/gallery";
+@use "./partials/links";
