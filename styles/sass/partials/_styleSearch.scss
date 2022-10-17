@@ -1,0 +1,20 @@
+@use "./variables";
+
+// Style Search Styles
+.styleSearch {
+    background-color: variables.$lightBlue;
+    padding: 100px 0;
+        .styleSearchFlex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                p {
+                    max-width: 1223px;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+                .button {
+                    margin-top: 30px;
+                }
+        }
+}

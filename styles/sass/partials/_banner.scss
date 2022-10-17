@@ -1,0 +1,10 @@
+@use "./variables";
+
+// Banner Styles
+.banner {
+    background-image: url(../textilee-assets/banner.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

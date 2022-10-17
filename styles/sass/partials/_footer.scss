@@ -1,0 +1,14 @@
+@use "./variables";
+
+// Footer Styles
+
+footer {
+    background-color: variables.$blackTwo;
+    margin: 0;
+    padding: 5px 0;
+        p {
+            color: variables.$solidWhite;
+            margin: 0;
+            text-align: center;
+        }
+}
