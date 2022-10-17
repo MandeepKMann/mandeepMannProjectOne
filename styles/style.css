@@ -337,7 +337,7 @@ nav .navUl {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  min-width: 1260px;
+  max-width: 1260px;
 }
 
 button {
@@ -456,12 +456,17 @@ header.index .headerImgContainer {
 .about .aboutContentContainer .aboutImgContainer {
   -webkit-box-shadow: -15px 15px 0 #0cadc0;
           box-shadow: -15px 15px 0 #0cadc0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .gallerySection {
   background-color: #21404F;
+  padding: 100px 0;
 }
-.gallerySection .gallery {
+
+.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,16 +480,14 @@ header.index .headerImgContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 100px 0;
-  margin: 0;
+  padding: 0;
 }
-
-.gallery li {
-  width: calc(33.3333333333% - 20px);
+.gallery .gallery li {
+  width: calc(33.3333333333% - 40px);
+  gap: 10px;
 }
-
-.gallery img {
-  width: 100%;
+.gallery .gallery li:nth-child(2) {
+  margin: 0 20px;
 }
 
 section.links {
@@ -535,4 +538,99 @@ section.links {
   height: 50px;
   border-radius: 50%;
   margin-right: 12px;
+}
+
+.market {
+  background-color: #21404F;
+  padding: 100px 0 70px 0;
+  position: relative;
+}
+.market img {
+  width: 100%;
+}
+
+.marketFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.marketFlex .marketChild {
+  width: 100%;
+}
+.marketFlex .marketChild h4, .marketFlex .marketChild p {
+  color: #ffffff;
+}
+.marketFlex .marketChild p {
+  max-width: 518px;
+}
+
+.marketImgLeft {
+  -webkit-box-shadow: 25px 25px 0 -10px #0cadc0;
+          box-shadow: 25px 25px 0 -10px #0cadc0;
+  position: absolute;
+  max-width: 41.5%;
+  top: -40px;
+  left: 0px;
+}
+
+.marketImgRight {
+  -webkit-box-shadow: -25px 25px 0 -10px #0cadc0;
+          box-shadow: -25px 25px 0 -10px #0cadc0;
+  position: absolute;
+  max-width: 44%;
+  right: 0;
+  bottom: -35px;
+}
+
+.marketTextLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.marketTextLeft .textContainerLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.marketTextLeft .textContainerLeft h4, .marketTextLeft .textContainerLeft p {
+  text-align: right;
+}
+
+.marketTextRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 200px;
+}
+.marketTextRight .textContainerRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.marketTextRight .textContainerRight h4, .marketTextRight .textContainerRight p {
+  text-align: left;
 }

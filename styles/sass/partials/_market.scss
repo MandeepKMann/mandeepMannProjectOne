@@ -1,0 +1,74 @@
+@use "./variables";
+
+// Market Styles
+.market {
+    background-color: variables.$teal;
+    padding: 100px 0 70px 0;
+    position: relative;
+        img {
+            width: 100%;
+        }
+
+}
+
+.marketFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+        .marketChild {
+            width: 100%;
+            h4, p {
+                color: variables.$solidWhite;
+            }
+            p {
+                max-width: 518px;
+            }
+        }
+}
+
+
+
+.marketImgLeft {
+    box-shadow: 25px 25px 0 -10px variables.$turquoise;
+    position: absolute;
+    max-width: 41.5%;
+    top: -40px;
+    left: 0px;
+}
+
+.marketImgRight {
+    box-shadow: -25px 25px 0 -10px variables.$turquoise;
+    position: absolute;
+    max-width: 44%;
+    right: 0;
+    bottom: -35px;
+    
+}
+
+.marketTextLeft {
+    display: flex;
+    justify-content: flex-start;
+        .textContainerLeft {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+                h4, p {
+                    text-align: right;
+                }
+            }
+}
+
+.marketTextRight {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 200px;
+        .textContainerRight {
+            display: flex;
+            flex-direction: column;
+                h4, p {
+                    text-align: left;
+                }
+        }
+        
+}
