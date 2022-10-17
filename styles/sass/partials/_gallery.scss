@@ -3,6 +3,21 @@
 .gallerySection {
     background-color: variables.$teal;
     padding: 100px 0;
+
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.gallery li {
+    width: calc((100% /3) - 20px);
+    .gallery li {
+        width: calc((100% / 3) - 40px);
+        gap: 20px;
+    }
 }
 
 // .gallery {
@@ -21,20 +36,21 @@
 // }
 
 
-.gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0;
+// .gallery {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     width: 100%;
+//     padding: 0;
 
-    .gallery li {
-        width: calc((100% / 3) - 40px);
-        gap: 10px;
+//     .gallery li {
+//         width: calc((100% / 3) - 40px);
+//         gap: 20px;
 
-        &:nth-child(2) {
-            margin: 0 20px;
-        }
-    }
-}
+//         &:nth-child(2) {
+//             margin: 0 20px;
+//         }
+//     }
+// }
+

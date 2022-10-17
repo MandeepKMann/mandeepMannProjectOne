@@ -4,39 +4,47 @@
 header {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
+    max-width: 100%;
 }
 
 
 // Index Header Styles
 header.index {
     background-image: url(../textilee-assets/header-home.jpg);
-    position: relative;
-        h2 {
-            max-width: 550px;
-            margin-top: 100px;
-        }
-            .headerImgContainer {
-                position: absolute;
-                bottom: -135px;
-                // bottom: -210px;
-            }
 }
 
-
+.positioningFlex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    h2 {
+            max-width: 550px;
+            margin-top: 100px;
+    }
+    .headerImgContainer {
+        position: absolute;
+        bottom: -750px;
+        left: -322px;
+    }
+    
+}
+    
+    
 // Global Nav Styles
 .navBar {
     width: 100%;
     height: auto;
 
-    .wrapper {
+    .navBarFlex {
         display: flex;
         justify-content: space-between;
 
         .navUl {
-            width: 38%;
             display: flex;
             justify-content: space-between;
+            padding: 0;
 
             li {
                 padding: 5px 15px;

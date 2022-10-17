@@ -385,27 +385,40 @@ ul {
 header {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
+  max-width: 100%;
 }
 
 header.index {
   background-image: url(../textilee-assets/header-home.jpg);
+}
+
+.positioningFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
-header.index h2 {
+.positioningFlex h2 {
   max-width: 550px;
   margin-top: 100px;
 }
-header.index .headerImgContainer {
+.positioningFlex .headerImgContainer {
   position: absolute;
-  bottom: -135px;
+  bottom: -750px;
+  left: -322px;
 }
 
 .navBar {
   width: 100%;
   height: auto;
 }
-.navBar .wrapper {
+.navBar .navBarFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,16 +426,16 @@ header.index .headerImgContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.navBar .wrapper .navUl {
-  width: 38%;
+.navBar .navBarFlex .navUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
 }
-.navBar .wrapper .navUl li {
+.navBar .navBarFlex .navUl li {
   padding: 5px 15px;
 }
 
@@ -470,24 +483,21 @@ header.index .headerImgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
 }
-.gallery .gallery li {
-  width: calc(33.3333333333% - 40px);
-  gap: 10px;
+
+.gallery li {
+  width: calc(33.3333333333% - 20px);
 }
-.gallery .gallery li:nth-child(2) {
-  margin: 0 20px;
+.gallery li .gallery li {
+  width: calc(33.3333333333% - 40px);
+  gap: 20px;
 }
 
 section.links {
@@ -543,7 +553,6 @@ section.links {
 .market {
   background-color: #21404F;
   padding: 100px 0 70px 0;
-  position: relative;
 }
 .market img {
   width: 100%;
@@ -553,12 +562,10 @@ section.links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 .marketFlex .marketChild {
@@ -571,22 +578,27 @@ section.links {
   max-width: 518px;
 }
 
-.marketImgLeft {
+.marketImgLeft,
+.marketImgRight {
+  position: relative;
+}
+
+.imgContainerLeft {
   -webkit-box-shadow: 25px 25px 0 -10px #0cadc0;
           box-shadow: 25px 25px 0 -10px #0cadc0;
   position: absolute;
-  max-width: 41.5%;
-  top: -40px;
-  left: 0px;
+  width: 800px;
+  top: -143px;
+  left: -322px;
 }
 
-.marketImgRight {
+.imgContainerRight {
   -webkit-box-shadow: -25px 25px 0 -10px #0cadc0;
           box-shadow: -25px 25px 0 -10px #0cadc0;
   position: absolute;
-  max-width: 44%;
-  right: 0;
-  bottom: -35px;
+  width: 800px;
+  right: -321px;
+  bottom: -150px;
 }
 
 .marketTextLeft {
@@ -620,7 +632,7 @@ section.links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 200px;
+  margin-bottom: 10%;
 }
 .marketTextRight .textContainerRight {
   display: -webkit-box;
@@ -640,11 +652,13 @@ section.links {
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
 }
 
 .styleSearch {
   background-color: #ccedfb;
-  padding: 100px 0;
+  padding: 140px 0;
 }
 .styleSearch .styleSearchFlex {
   display: -webkit-box;
@@ -676,4 +690,29 @@ footer p {
   color: #ffffff;
   margin: 0;
   text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .imgContainerLeft,
+.imgContainerRight {
+    position: static;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .marketFlex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .marketFlex .marketChild {
+    width: 50%;
+    margin: 0;
+  }
 }

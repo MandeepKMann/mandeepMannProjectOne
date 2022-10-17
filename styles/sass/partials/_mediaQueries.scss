@@ -1,0 +1,23 @@
+@use "./variables";
+
+// Index Media Queries
+
+@media (max-width: 1300px) {
+    .imgContainerLeft, 
+    .imgContainerRight {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .marketFlex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+            .marketChild {
+                width: calc(100% / 2);
+                margin: 0;
+            }
+    }
+}

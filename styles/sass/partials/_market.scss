@@ -4,7 +4,6 @@
 .market {
     background-color: variables.$teal;
     padding: 100px 0 70px 0;
-    position: relative;
         img {
             width: 100%;
         }
@@ -13,8 +12,7 @@
 
 .marketFlex {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
         .marketChild {
             width: 100%;
@@ -29,21 +27,26 @@
 
 
 
-.marketImgLeft {
-    box-shadow: 25px 25px 0 -10px variables.$turquoise;
-    position: absolute;
-    max-width: 41.5%;
-    top: -40px;
-    left: 0px;
+.marketImgLeft, 
+.marketImgRight {
+    position: relative;
+
 }
 
-.marketImgRight {
+.imgContainerLeft {
+    box-shadow: 25px 25px 0 -10px variables.$turquoise;
+    position: absolute;
+    width: 800px;
+    top: -143px;
+    left: -322px;
+}
+
+.imgContainerRight {
     box-shadow: -25px 25px 0 -10px variables.$turquoise;
     position: absolute;
-    max-width: 44%;
-    right: 0;
-    bottom: -35px;
-    
+    width: 800px;
+    right: -321px;
+    bottom: -150px;
 }
 
 .marketTextLeft {
@@ -62,7 +65,7 @@
 .marketTextRight {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 200px;
+    margin-bottom: 10%;
         .textContainerRight {
             display: flex;
             flex-direction: column;
