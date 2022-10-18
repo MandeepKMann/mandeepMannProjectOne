@@ -8,16 +8,28 @@
         position: static;
         width: 100%;
         box-shadow: none;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
     }
 
     .marketFlex {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 20px;
 
             .marketChild {
-                width: calc(100% / 2);
+                width: calc((100% / 2) - 20px);
                 margin: 0;
             }
     }
+
+    .marketTextRight {
+        margin-bottom: 0;
+    }
+
 }
+

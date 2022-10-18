@@ -4,6 +4,7 @@
 .market {
     background-color: variables.$teal;
     padding: 100px 0 70px 0;
+    overflow-x: clip;
         img {
             width: 100%;
         }

@@ -386,12 +386,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
   max-width: 100%;
 }
 
 header.index {
   background-image: url(../textilee-assets/header-home.jpg);
+  height: 100vh;
 }
 
 .positioningFlex {
@@ -412,6 +412,11 @@ header.index {
   position: absolute;
   bottom: -750px;
   left: -322px;
+}
+
+header.blog {
+  background-image: url(../textilee-assets/blog-header.jpg);
+  height: 75vh;
 }
 
 .navBar {
@@ -553,6 +558,7 @@ section.links {
 .market {
   background-color: #21404F;
   padding: 100px 0 70px 0;
+  overflow-x: clip;
 }
 .market img {
   width: 100%;
@@ -700,6 +706,13 @@ footer p {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .imgContainerLeft img,
+.imgContainerRight img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .marketFlex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -710,9 +723,13 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 20px;
   }
   .marketFlex .marketChild {
-    width: 50%;
+    width: calc(50% - 20px);
     margin: 0;
+  }
+  .marketTextRight {
+    margin-bottom: 0;
   }
 }
