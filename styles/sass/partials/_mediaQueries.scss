@@ -3,15 +3,19 @@
 // Index Media Queries
 
 @media (max-width: 1300px) {
+    .market {
+        padding-bottom: 100px;
+    }
+    
     .imgContainerLeft, 
     .imgContainerRight {
         position: static;
         width: 100%;
         box-shadow: none;
             img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
+                width: 490px;
+                height: 300px;
+                object-fit: cover;
             }
     }
 
@@ -33,3 +37,152 @@
 
 }
 
+@media (max-width: 1000px) {
+    .gallery {
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+    }
+
+    .gallery li {
+        width: calc((100% / 2) - 40px);
+            img {
+                width: 100%;
+            }
+
+    }
+    .gallery li:nth-child(3) {
+        margin: 40px auto 0 auto;
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+    .about {
+        .aboutContentContainer {
+            flex-direction: column;
+            justify-content: space-between;
+                .aboutTextContainer {
+                    max-width: 100%;
+                    text-align: center;
+                    margin-bottom: 40px;
+                        .button {
+                            margin: 0 auto;
+                        }
+                }
+                .aboutImgContainer {
+                    margin: 0 auto;
+                }
+        }
+    }
+
+    .marketFlex {
+        flex-direction: column;
+        align-items: center;
+            .marketChild {
+                width: 100%;
+                    .textContainerLeft, 
+                    .textContainerRight {
+                        gap: 20px;
+                            h4, p {
+                                margin: 0 auto;
+                                max-width: 100%;
+                                text-align: center;
+                            }
+                            button {
+                                margin: 0 auto;
+                            }
+                    }
+            }
+    }
+
+    .imgContainerLeft, 
+    .imgContainerRight {
+        margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+    }
+
+    .marketTextLeft {
+        order: 2;
+    }
+
+    .marketImgRight {
+        order: 1;
+    }
+
+}
+
+
+
+@media (max-width: 800px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery li {
+        width: 80%;
+    }
+
+    .gallery li:nth-child(3) {
+        margin: 0;
+    }
+
+    .positioningFlex {
+        h2 {
+            font-size: 5rem;
+            line-height: 10rem;
+            margin: 0 auto;
+        }
+        .headerImgContainer {
+            display: none;
+        }
+    }
+
+    .about {
+        padding-top: 100px;
+    }
+
+    .linksUl {
+        flex-direction: column;
+        gap: 30px;
+            li {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+                padding: 0;
+                    p {
+                        width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+            }
+    }
+
+        .iconTitle {
+            justify-content: center;
+        }
+}
+
+@media (max-width: 700px) {
+    .banner {
+        height: 250px;
+    }
+}
+    
+
+
+
+
+// @media (max-width: 350px) {
+//     .styleSearch {
+//         h4 {
+//             font-size: 1.8rem;
+//         }
+//     }
+// }
