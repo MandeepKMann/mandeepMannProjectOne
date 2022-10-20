@@ -749,8 +749,7 @@ footer p {
   background-color: #21404F;
   -webkit-box-shadow: 11px 10px 0px 0px #0cadc0;
           box-shadow: 11px 10px 0px 0px #0cadc0;
-  border: 2px solid red;
-  width: 52%;
+  width: 59.4%;
   position: relative;
   padding: 100px 0 100px 0;
   margin-top: 400px;
@@ -762,6 +761,9 @@ footer p {
   left: -2px;
   top: -630px;
 }
+.blogContent .collection .collectionTextContainer {
+  padding-left: 50px;
+}
 .blogContent aside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,20 +773,25 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #21404F;
-  border: 2px solid orange;
-  width: 20.5%;
+  width: 30%;
   margin-top: 70px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  margin-top: 30px;
-  padding-top: 450px;
+  margin-top: 480px;
+  padding: 10px 0;
 }
 .blogContent aside .asideImgContainer {
+  -webkit-box-shadow: -30px 26px 0px -10px #21404F;
+          box-shadow: -30px 26px 0px -10px #21404F;
+  width: 96%;
   position: absolute;
   right: 0;
-  top: -20px;
+  top: -564px;
+}
+.blogContent aside .asideImgContainer img {
+  width: 100%;
 }
 .blogContent aside ul {
   list-style: disc;
