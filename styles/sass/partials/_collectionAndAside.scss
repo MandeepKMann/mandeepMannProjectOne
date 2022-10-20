@@ -1,0 +1,73 @@
+@use "./variables";
+
+// New Collection Styles
+.asideWrapper {
+    margin: 0 20px;
+}
+
+
+.blogContent {
+    display: flex;
+    justify-content: space-between;
+    background-color: variables.$lightBlue;
+    padding: 100px 0;
+        h4,
+        h5,
+        p,
+        a {
+            color: variables.$solidWhite;
+            text-align: left;
+        }
+
+        .collection {
+            display: flex;
+            flex-direction: column;
+            background-color: variables.$teal;
+            box-shadow: 11px 10px 0px 0px variables.$turquoise;
+            border: 2px solid red;
+            width: 52%;
+            position: relative;
+            padding: 100px 0 100px 0;
+            margin-top: 400px;
+                .collectionImgContainer {
+                    box-shadow: 25px 25px 0px -10px variables.$turquoise;
+                    position: absolute;
+                    left: -2px;
+                    top: -630px;
+                }
+            
+                
+                
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            background-color: variables.$teal;
+            border: 2px solid orange;
+            width: 20.5%;
+            margin-top: 70px;
+            height: fit-content;
+            position: relative;
+            margin-top: 30px;
+            padding-top: 450px;
+                .asideImgContainer {
+                    position: absolute;
+                    right: 0;
+                    top: -20px;
+                }
+                ul {
+                    list-style: disc;
+                    color: variables.$solidWhite;
+                    text-align: left;
+                    padding: 0 0 0 30px;
+                    width: fit-content;
+                }
+                
+        }
+}
+
+.asideTextOne {
+    p {
+        max-width: 350px;
+    }
+}

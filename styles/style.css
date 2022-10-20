@@ -428,6 +428,9 @@ header.blog {
   background-image: url(../textilee-assets/blog-header.jpg);
   height: 75vh;
 }
+header.blog h1 {
+  margin-top: 150px;
+}
 
 .navBar {
   width: 100%;
@@ -712,6 +715,89 @@ footer p {
   color: #ffffff;
   margin: 0;
   text-align: center;
+}
+
+.asideWrapper {
+  margin: 0 20px;
+}
+
+.blogContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ccedfb;
+  padding: 100px 0;
+}
+.blogContent h4,
+.blogContent h5,
+.blogContent p,
+.blogContent a {
+  color: #ffffff;
+  text-align: left;
+}
+.blogContent .collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #21404F;
+  -webkit-box-shadow: 11px 10px 0px 0px #0cadc0;
+          box-shadow: 11px 10px 0px 0px #0cadc0;
+  border: 2px solid red;
+  width: 52%;
+  position: relative;
+  padding: 100px 0 100px 0;
+  margin-top: 400px;
+}
+.blogContent .collection .collectionImgContainer {
+  -webkit-box-shadow: 25px 25px 0px -10px #0cadc0;
+          box-shadow: 25px 25px 0px -10px #0cadc0;
+  position: absolute;
+  left: -2px;
+  top: -630px;
+}
+.blogContent aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #21404F;
+  border: 2px solid orange;
+  width: 20.5%;
+  margin-top: 70px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  margin-top: 30px;
+  padding-top: 450px;
+}
+.blogContent aside .asideImgContainer {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+.blogContent aside ul {
+  list-style: disc;
+  color: #ffffff;
+  text-align: left;
+  padding: 0 0 0 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.asideTextOne p {
+  max-width: 350px;
 }
 
 @media (max-width: 800px) {
