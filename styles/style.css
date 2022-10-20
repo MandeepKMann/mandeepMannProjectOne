@@ -230,7 +230,7 @@ html {
 .skipLink {
   position: absolute;
   left: -1000px;
-  z-index: 10;
+  z-index: 30;
   background: white;
   color: black;
   font-size: 1rem;
@@ -244,7 +244,7 @@ html {
 }
 
 html {
-  font-size: 120%;
+  font-size: 125%;
 }
 
 body {
@@ -349,14 +349,20 @@ button {
   width: fit-content;
   padding: 10px 35px;
   border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 button:hover, button:focus {
-  text-decoration: underline;
-  font-style: italic;
+  background-color: #0cadc0;
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
+  color: #1a315c;
+}
+a:hover, a:focus {
+  border-bottom: 2px solid #0cadc0;
 }
 a.button {
   color: #ffffff;
@@ -367,10 +373,12 @@ a.button {
   width: fit-content;
   padding: 10px 35px;
   border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 a.button:hover, a.button:focus {
-  text-decoration: underline;
-  font-style: italic;
+  background-color: #0cadc0;
+  color: #161515;
 }
 
 img {
@@ -442,6 +450,9 @@ header.blog {
 }
 .navBar .navBarFlex .navUl li {
   padding: 5px 15px;
+}
+.navBar .navBarFlex .navUl li a {
+  padding-top: 8px;
 }
 
 .navToggle,
@@ -676,6 +687,9 @@ section.links {
       -ms-flex-align: center;
           align-items: center;
 }
+.styleSearch .styleSearchFlex h4 {
+  text-align: center;
+}
 .styleSearch .styleSearchFlex p {
   max-width: 1223px;
   text-align: center;
@@ -696,6 +710,72 @@ footer p {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .navBar .navBarFlex .navToggleLabel {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 10px;
+    padding: 10px;
+    margin: 15px 0;
+  }
+  .navBar .navBarFlex .navToggleLabel .hamburgerIcon {
+    width: 60px;
+    height: 5px;
+    background-color: #1a315c;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  .navBar .navBarFlex .navUl {
+    display: none;
+  }
+  .navToggle:checked ~ .navUl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 90.8vh;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    background-color: #ccedfb;
+    z-index: 20;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navToggle:checked ~ .navUl li {
+    width: auto;
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+  .navToggle:checked ~ .navUl li a {
+    cursor: pointer;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 35px;
+    border: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navToggle:checked ~ .navUl li a:hover, .navToggle:checked ~ .navUl li a:focus {
+    background-color: #0cadc0;
+    color: #161515;
+  }
+}
 @media (max-width: 1300px) {
   .market {
     padding-bottom: 100px;

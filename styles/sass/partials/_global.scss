@@ -14,31 +14,40 @@ button {
     width: fit-content;
     padding: 10px 35px;
     border: none;
+    transition: 1s;
     
     &:hover,
     &:focus {
-        text-decoration: underline;
-        font-style: italic;
+        background-color: variables.$turquoise;
+        color: variables.$solidWhite;
     }
 
 }
 
 a {
     text-decoration: none;
-    
-    &.button {
-        color: variables.$solidWhite;
-        background-color: variables.$darkBlue;
-        cursor: pointer;
-        width: fit-content;
-        padding: 10px 35px;
-        border: none;
-        
+    color: variables.$darkBlue;;    
+
         &:hover,
         &:focus {
-            text-decoration: underline;
-            font-style: italic;
-        }       
+            border-bottom: 2px solid variables.$turquoise;
+        }
+    
+        &.button {
+            color: variables.$solidWhite;
+            background-color: variables.$darkBlue;
+            cursor: pointer;
+            width: fit-content;
+            padding: 10px 35px;
+            border: none;
+            transition: 1s;
+        
+            &:hover,
+            &:focus { 
+            background-color: variables.$turquoise;
+            color: variables.$blackTwo;
+
+            }       
     }
 }    
 
