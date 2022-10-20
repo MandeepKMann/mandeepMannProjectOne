@@ -10,7 +10,9 @@
                 .aboutTextContainer {
                     display: flex;
                     flex-direction: column;
-                    max-width: 53.4%;
+                        p {
+                            max-width: 805px;
+                        }
                     
                 }
                 .aboutImgContainer {
@@ -20,3 +22,4 @@
                 }
         }
 }
+

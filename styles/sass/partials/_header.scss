@@ -13,20 +13,28 @@ header {
 header.index {
     background-image: url(../textilee-assets/header-home.jpg);
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+
+
 
 .positioningFlex {
     display: flex;
     flex-direction: column;
-    position: relative;
+    
     h2 {
-            max-width: 550px;
+            max-width: 565px;
             margin-top: 100px;
     }
-    .headerImgContainer {
-        position: absolute;
-        bottom: -750px;
-        left: -322px;
+    .headerImg {
+        .headerImgContainer {
+            position: absolute;
+            bottom: -170px;
+            left: 0px;
+        }
     }
     
 }
@@ -36,7 +44,11 @@ header.index {
 header.blog {
     background-image: url(../textilee-assets/blog-header.jpg);
     height: 75vh;
+    
 }
+
+
+
 
 // ///////////////////////////////////////////////////////////////////////////////////
     
