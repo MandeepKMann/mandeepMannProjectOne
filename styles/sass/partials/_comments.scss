@@ -49,6 +49,7 @@
             border-bottom: 2px solid variables.$turquoise;
             background-color: variables.$lightBlue;
             height: 80px;
+            padding-left: 30px;
                 &::placeholder {
                     color: variables.$darkBlue;
                     opacity: 1;
@@ -60,10 +61,11 @@
             resize: none;
             border: 2px solid variables.$turquoise;
             background-color: variables.$lightBlue;
+            // Justin A helped me figure out the padding for placeholder text is meant to be on the textarea and not ::placeholder
+            padding: 30px 0 0 30px;
                 &::placeholder {
                     color: variables.$darkBlue;
                     opacity: 1;
-                    margin: 10px 0 0 10px;
                 }
 
         }

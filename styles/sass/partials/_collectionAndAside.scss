@@ -1,11 +1,6 @@
 @use "./variables";
 
 // New Collection Styles
-.asideWrapper {
-    margin: 0 20px;
-    max-width: 1260px;
-}
-
 .blogContent {
     display: flex;
     justify-content: space-between;
@@ -27,11 +22,12 @@
             display: flex;
             flex-direction: column;
             background-color: variables.$teal;
-            width: 59.45%;
+            width: 61%;
             box-shadow: 11px 10px 0px 0px variables.$turquoise;
                 .collectionImgContainer {
                     box-shadow: 25px 25px 0px -10px variables.$turquoise;
-                    width: 1128.1px;
+                    max-width: 1271.1px;
+                    width: 110%;
                     position: relative;
                     left: -114px;
                     top: -115px;
@@ -40,17 +36,10 @@
                         }
                 }
                 .collectionTextContainer {
-                    padding-left: 50px;
                     margin-bottom: 100px;
-                    margin-left: 150px;
                         .blogDate {
                             color: variables.$lightBlue;
                             font-weight: bold;
-                        }
-                        p {
-                            // TODO: Perhaps an issue with the wrapper?
-                            max-width: 780px;
-                            border: 2px solid red;
                         }
                 }
             
@@ -63,7 +52,7 @@
             background-color: variables.$teal;
             width: 25%;
             height: fit-content;
-            margin-top: 190px;
+            margin-top: 290px;
                 .asideImgContainer {
                     position: relative;
                     right: -17px;
@@ -74,6 +63,11 @@
                     }
                 }     
         }
+}
+
+.asideTextOne,
+.asideTextTwo {
+    width: 100%;
 }
 
 .asideTextOne {
@@ -91,4 +85,8 @@
             padding: 0 0 0 30px;
             width: fit-content;
         }
+}
+
+.collection p {
+    max-width: 775px;
 }

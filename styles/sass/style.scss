@@ -22,4 +22,6 @@
 @use "./partials/comments";
 
 // Media Queries
-@use "./partials/mediaQueries";
+@use "./partials/mediaQueries/globalMediaQueries";
+@use "./partials/mediaQueries/indexMediaQueries";
+@use "./partials/mediaQueries/blogMediaQueries";
