@@ -426,7 +426,7 @@ header.index {
 
 header.blog {
   background-image: url(../textilee-assets/blog-header.jpg);
-  height: 75vh;
+  height: 80vh;
 }
 header.blog h1 {
   margin-top: 150px;
@@ -719,6 +719,7 @@ footer p {
 
 .asideWrapper {
   margin: 0 20px;
+  max-width: 1260px;
 }
 
 .blogContent {
@@ -729,7 +730,8 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #ccedfb;
-  padding: 100px 0;
+  overflow-x: clip;
+  padding-bottom: 100px;
 }
 .blogContent h4,
 .blogContent h5,
@@ -737,6 +739,9 @@ footer p {
 .blogContent a {
   color: #ffffff;
   text-align: left;
+}
+.blogContent img {
+  width: 100%;
 }
 .blogContent .collection {
   display: -webkit-box;
@@ -747,22 +752,33 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #21404F;
+  width: 59.45%;
   -webkit-box-shadow: 11px 10px 0px 0px #0cadc0;
           box-shadow: 11px 10px 0px 0px #0cadc0;
-  width: 59.4%;
-  position: relative;
-  padding: 100px 0 100px 0;
-  margin-top: 400px;
 }
 .blogContent .collection .collectionImgContainer {
   -webkit-box-shadow: 25px 25px 0px -10px #0cadc0;
           box-shadow: 25px 25px 0px -10px #0cadc0;
-  position: absolute;
-  left: -2px;
-  top: -630px;
+  width: 1128.1px;
+  position: relative;
+  left: -114px;
+  top: -115px;
+}
+.blogContent .collection .collectionImgContainer img {
+  width: 100%;
 }
 .blogContent .collection .collectionTextContainer {
   padding-left: 50px;
+  margin-bottom: 100px;
+  margin-left: 150px;
+}
+.blogContent .collection .collectionTextContainer .blogDate {
+  color: #ccedfb;
+  font-weight: bold;
+}
+.blogContent .collection .collectionTextContainer p {
+  max-width: 780px;
+  border: 2px solid red;
 }
 .blogContent aside {
   display: -webkit-box;
@@ -773,27 +789,30 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #21404F;
-  width: 30%;
-  margin-top: 70px;
+  width: 25%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
-  margin-top: 480px;
-  padding: 10px 0;
+  margin-top: 190px;
 }
 .blogContent aside .asideImgContainer {
-  -webkit-box-shadow: -30px 26px 0px -10px #21404F;
-          box-shadow: -30px 26px 0px -10px #21404F;
-  width: 96%;
-  position: absolute;
-  right: 0;
-  top: -564px;
+  position: relative;
+  right: -17px;
+  top: -20px;
+  width: 458.617px;
 }
 .blogContent aside .asideImgContainer img {
   width: 100%;
 }
-.blogContent aside ul {
+
+.asideTextOne p {
+  max-width: 464px;
+}
+
+.asideTextContainers {
+  margin-right: 12px;
+}
+.asideTextContainers ul {
   list-style: disc;
   color: #ffffff;
   text-align: left;
@@ -803,8 +822,131 @@ footer p {
   width: fit-content;
 }
 
-.asideTextOne p {
-  max-width: 350px;
+.commentSection {
+  background-color: #ccedfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+}
+.commentSection .commenters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 0;
+  gap: 50px;
+}
+.commentSection .commenters .commentOne,
+.commentSection .commenters .commentTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+.commentSection .commenters .commentOne .commentTextContainer,
+.commentSection .commenters .commentTwo .commentTextContainer {
+  max-width: 630px;
+}
+.commentSection .commenters .commentOne .commentImgContainer,
+.commentSection .commenters .commentTwo .commentImgContainer {
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+}
+.commentSection .commenters .commentOne .commentImgContainer img,
+.commentSection .commenters .commentTwo .commentImgContainer img {
+  width: 100%;
+}
+
+.commentDate {
+  color: #1a315c;
+  font-weight: bold;
+}
+
+.contactForm {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.contactForm input {
+  width: calc(50% - 30px);
+  border: none;
+  border-bottom: 2px solid #0cadc0;
+  background-color: #ccedfb;
+  height: 80px;
+}
+.contactForm input::-webkit-input-placeholder {
+  color: #1a315c;
+  opacity: 1;
+}
+.contactForm input::-moz-placeholder {
+  color: #1a315c;
+  opacity: 1;
+}
+.contactForm input:-ms-input-placeholder {
+  color: #1a315c;
+  opacity: 1;
+}
+.contactForm input::-ms-input-placeholder {
+  color: #1a315c;
+  opacity: 1;
+}
+.contactForm input::placeholder {
+  color: #1a315c;
+  opacity: 1;
+}
+.contactForm textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid #0cadc0;
+  background-color: #ccedfb;
+}
+.contactForm textarea::-webkit-input-placeholder {
+  color: #1a315c;
+  opacity: 1;
+  margin: 10px 0 0 10px;
+}
+.contactForm textarea::-moz-placeholder {
+  color: #1a315c;
+  opacity: 1;
+  margin: 10px 0 0 10px;
+}
+.contactForm textarea:-ms-input-placeholder {
+  color: #1a315c;
+  opacity: 1;
+  margin: 10px 0 0 10px;
+}
+.contactForm textarea::-ms-input-placeholder {
+  color: #1a315c;
+  opacity: 1;
+  margin: 10px 0 0 10px;
+}
+.contactForm textarea::placeholder {
+  color: #1a315c;
+  opacity: 1;
+  margin: 10px 0 0 10px;
+}
+.contactForm button {
+  width: 100%;
+  color: #ffffff;
+  background-color: #1a315c;
+}
+.contactForm button:hover, .contactForm button:focus {
+  background-color: #0cadc0;
+  color: #161515;
 }
 
 @media (max-width: 800px) {

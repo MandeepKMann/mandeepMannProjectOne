@@ -1,0 +1,82 @@
+@use "./variables";
+
+// Comment Section Styles
+.commentSection {
+    background-color: variables.$lightBlue;
+    display: flex;
+    padding-bottom: 100px;
+        .commenters {
+            display: flex;
+            flex-direction: column;
+            padding: 50px 0;
+            gap: 50px;
+                .commentOne, 
+                .commentTwo {
+                    display: flex;
+                    gap: 50px;
+                        .commentTextContainer {
+                            max-width: 630px;   
+                        }
+                        .commentImgContainer {                        
+                            width: auto;
+                            height: fit-content;
+                            margin-top: 20px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                }
+        }
+}
+
+.commentDate {
+    color: variables.$darkBlue;
+    font-weight: bold;
+}
+
+// Comment Form Styles
+
+.contactForm {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    // Needed reminder for placeholder stylings, got it from https: //developer.mozilla.org/en-US/docs/Web/CSS/::placeholder
+        input {
+            width: calc((100% / 2) - 30px);
+            border: none;
+            border-bottom: 2px solid variables.$turquoise;
+            background-color: variables.$lightBlue;
+            height: 80px;
+                &::placeholder {
+                    color: variables.$darkBlue;
+                    opacity: 1;
+                }
+
+        }
+        textarea {
+            width: 100%;
+            resize: none;
+            border: 2px solid variables.$turquoise;
+            background-color: variables.$lightBlue;
+                &::placeholder {
+                    color: variables.$darkBlue;
+                    opacity: 1;
+                    margin: 10px 0 0 10px;
+                }
+
+        }
+        button {
+            width: 100%;
+            color: variables.$solidWhite;
+            background-color: variables.$darkBlue;
+                &:hover,
+                &:focus {
+                    background-color: variables.$turquoise;
+                    color: variables.$blackTwo;
+                }
+        }
+}
+
+

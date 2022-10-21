@@ -3,14 +3,15 @@
 // New Collection Styles
 .asideWrapper {
     margin: 0 20px;
+    max-width: 1260px;
 }
-
 
 .blogContent {
     display: flex;
     justify-content: space-between;
     background-color: variables.$lightBlue;
-    padding: 100px 0;
+    overflow-x: clip;
+    padding-bottom: 100px;
         h4,
         h5,
         p,
@@ -18,25 +19,39 @@
             color: variables.$solidWhite;
             text-align: left;
         }
+        img {
+            width: 100%;
+        }
 
         .collection {
             display: flex;
             flex-direction: column;
             background-color: variables.$teal;
+            width: 59.45%;
             box-shadow: 11px 10px 0px 0px variables.$turquoise;
-            // border: 2px solid red;
-            width: 59.4%;
-            position: relative;
-            padding: 100px 0 100px 0;
-            margin-top: 400px;
                 .collectionImgContainer {
                     box-shadow: 25px 25px 0px -10px variables.$turquoise;
-                    position: absolute;
-                    left: -2px;
-                    top: -630px;
+                    width: 1128.1px;
+                    position: relative;
+                    left: -114px;
+                    top: -115px;
+                        img {
+                            width: 100%;
+                        }
                 }
                 .collectionTextContainer {
                     padding-left: 50px;
+                    margin-bottom: 100px;
+                    margin-left: 150px;
+                        .blogDate {
+                            color: variables.$lightBlue;
+                            font-weight: bold;
+                        }
+                        p {
+                            // TODO: Perhaps an issue with the wrapper?
+                            max-width: 780px;
+                            border: 2px solid red;
+                        }
                 }
             
                 
@@ -46,36 +61,34 @@
             display: flex;
             flex-direction: column;
             background-color: variables.$teal;
-            // border: 2px solid orange;
-            width: 30%;
-            margin-top: 70px;
+            width: 25%;
             height: fit-content;
-            position: relative;
-            margin-top: 480px;
-            padding: 10px 0;
+            margin-top: 190px;
                 .asideImgContainer {
-                    box-shadow: -30px 26px 0px -10px variables.$teal;
-                    width: 96%;
-                    position: absolute;
-                    right: 0;
-                    top: -564px;
-                        img { 
-                            width: 100%;
-                        }
-                }
-                ul {
-                    list-style: disc;
-                    color: variables.$solidWhite;
-                    text-align: left;
-                    padding: 0 0 0 30px;
-                    width: fit-content;
-                }
-                
+                    position: relative;
+                    right: -17px;
+                    top: -20px;
+                    width: 458.617px;
+                    img { 
+                        width: 100%;
+                    }
+                }     
         }
 }
 
 .asideTextOne {
     p {
-        max-width: 350px;
+        max-width: 464px;
     }
+}
+
+.asideTextContainers {
+    margin-right: 12px;
+        ul {
+            list-style: disc;
+            color: variables.$solidWhite;
+            text-align: left;
+            padding: 0 0 0 30px;
+            width: fit-content;
+        }
 }
