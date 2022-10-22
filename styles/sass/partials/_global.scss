@@ -59,3 +59,35 @@ img {
 ul {
     list-style: none;
 }
+
+form {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+input {
+    width: calc((100% / 2) - 30px);
+    border: none;
+    border-bottom: 2px solid variables.$turquoise;
+    height: 80px;
+    padding-left: 30px;
+    color: variables.$solidWhite;
+    &::placeholder {
+            opacity: 1;
+        }
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: 2px solid variables.$turquoise;
+    padding: 30px 0 0 30px;
+    // Justin A helped me figure out the padding for placeholder text is meant to be on the textarea and not ::placeholder
+        &::placeholder {
+            opacity: 1;
+            }
+}
+

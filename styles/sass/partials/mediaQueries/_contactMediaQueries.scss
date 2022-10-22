@@ -76,3 +76,49 @@
     
     
 }
+
+@media (max-height: 700px) {    
+    .contactFlex {
+            flex-direction: column;
+    
+            .contactForm {
+                position: static;
+                width: 100%;
+                padding: 0px;
+                box-shadow: none;
+            }
+    
+            .contactInfo {
+                width: 100%;
+                margin: 0 auto;
+                padding: 100px 0 0 0;
+                display: flex;
+                flex-direction: column;
+    
+                .contactIcons {
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 30px;
+    
+                    i {
+                        font-size: 2.8rem;
+                        color: variables.$solidWhite;
+                    }
+                }
+    
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 50px;
+                     p{
+                        color: variables.$solidWhite;
+                     }
+                }
+            }
+        }
+
+    .contactMainBackground {
+        background-color: variables.$teal;
+    }
+}

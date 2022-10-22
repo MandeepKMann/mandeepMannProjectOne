@@ -60,7 +60,11 @@
 
 }
 
-
+@media (max-height: 950px) {
+    .headerImgContainer {
+        display: none;
+    }
+}
 
 @media (max-width: 900px) {
     .about {

@@ -1,4 +1,4 @@
-@use "./variables";
+@use "../variables";
 
 // Comment Section Styles
 .commentSection {
@@ -37,20 +37,9 @@
 // Comment Form Styles
 
 .commentForm {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
     // Needed reminder for placeholder stylings, got it from https: //developer.mozilla.org/en-US/docs/Web/CSS/::placeholder
         input {
-            width: calc((100% / 2) - 30px);
-            border: none;
-            border-bottom: 2px solid variables.$turquoise;
             background-color: variables.$lightBlue;
-            height: 80px;
-            padding-left: 30px;
-            color: variables.$solidWhite;
                 &::placeholder {
                     color: variables.$darkBlue;
                     opacity: 1;
@@ -58,13 +47,8 @@
 
         }
         textarea {
-            width: 100%;
-            resize: none;
-            border: 2px solid variables.$turquoise;
             background-color: variables.$lightBlue;
             color: variables.$solidWhite;
-            // Justin A helped me figure out the padding for placeholder text is meant to be on the textarea and not ::placeholder
-            padding: 30px 0 0 30px;
                 &::placeholder {
                     color: variables.$darkBlue;
                     opacity: 1;

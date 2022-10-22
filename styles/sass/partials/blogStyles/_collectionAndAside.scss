@@ -1,4 +1,4 @@
-@use "./variables";
+@use "../variables";
 
 // New Collection Styles
 .blogContent {
@@ -58,9 +58,9 @@
                     right: -17px;
                     top: -20px;
                     width: 458.617px;
-                    img { 
-                        width: 100%;
-                    }
+                        img { 
+                            width: 100%;
+                        }
                 }     
         }
 }

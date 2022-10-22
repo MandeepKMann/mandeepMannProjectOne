@@ -67,4 +67,10 @@
         }
 }
 
+// Header 
 
+@media (max-height: 400px) {
+    header {
+        min-height: 500px;
+    }
+}

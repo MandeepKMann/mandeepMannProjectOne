@@ -5,24 +5,25 @@
 @use "./partials/global";
 
 // Global Styles
-@use "./partials/header";
+@use "./partials/headers&Footers/header";
+@use "./partials/headers&Footers/footer";
 
 
-// About Styles
-@use "./partials/about";
-@use "./partials/gallery";
-@use "./partials/links";
-@use "./partials/market";
-@use "./partials/banner";
-@use "./partials/styleSearch";
-@use "./partials/footer";
+// Index & About Styles
+@use "./partials/index&AboutStyles/about";
+@use "./partials/index&AboutStyles/gallery";
+@use "./partials/index&AboutStyles/links";
+@use "./partials/index&AboutStyles/market";
+@use "./partials/index&AboutStyles/banner";
+@use "./partials/index&AboutStyles/styleSearch";
+
 
 // Blog Styles
-@use "./partials/collectionAndAside";
-@use "./partials/comments";
+@use "./partials/blogStyles/collectionAndAside";
+@use "./partials/blogStyles/comments";
 
 // Contact Styles
-@use "./partials/contact";
+@use "./partials/contactStyles/contact";
 
 // Media Queries
 @use "./partials/mediaQueries/globalMediaQueries";

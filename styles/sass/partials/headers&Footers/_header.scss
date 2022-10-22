@@ -1,4 +1,4 @@
-@use "./variables";
+@use "../variables";
 
 // Global Header Styles
 header {
@@ -24,9 +24,9 @@ header.index {
     }
     .headerImg {
         .headerImgContainer {
-            position: absolute;
+            position: relative;
             bottom: -170px;
-            left: 0px;
+            left: -322px;
         }
     }
     
