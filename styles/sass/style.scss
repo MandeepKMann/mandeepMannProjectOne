@@ -4,11 +4,11 @@
 @use "./partials/typography";
 @use "./partials/global";
 
-// Global Content Styles
+// Global Styles
 @use "./partials/header";
 
 
-// About Content Styles
+// About Styles
 @use "./partials/about";
 @use "./partials/gallery";
 @use "./partials/links";
@@ -17,11 +17,15 @@
 @use "./partials/styleSearch";
 @use "./partials/footer";
 
-// Blog Content Styles
+// Blog Styles
 @use "./partials/collectionAndAside";
 @use "./partials/comments";
+
+// Contact Styles
+@use "./partials/contact";
 
 // Media Queries
 @use "./partials/mediaQueries/globalMediaQueries";
 @use "./partials/mediaQueries/indexMediaQueries";
 @use "./partials/mediaQueries/blogMediaQueries";
+@use "./partials/mediaQueries/contactMediaQueries";

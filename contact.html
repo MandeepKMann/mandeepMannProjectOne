@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Textilee - Contact</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/1015bcb745.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Skip Link -->
@@ -13,10 +14,10 @@
     
     
     <!-- Header -->
-    <header>
+    <header class="contact">
         <!-- Nav Section -->
         <nav class="navBar">
-            <div class="wrapper">
+            <div class="wrapper navBarFlex">
                 <!-- Hamburger Menu -->
                 <input type="checkbox" id="navToggle" class="navToggle" />
                 <label for="navToggle" class="navToggleLabel">
@@ -41,8 +42,8 @@
     </header>
 
     <!-- Main -->
-    <main id="mainContent">
-        <div class="wrapper">
+    <main id="mainContent" class="contactMainBackground">
+        <div class="wrapper contactFlex">
             <!-- Form -->
             <form action="" method="" class="contactForm" name="commentForm">
                 <label for="name" class="sr-only">Name</label>
@@ -51,20 +52,20 @@
                 <label for="email" class="sr-only">Email</label>
                 <input type="email" id="email" placeholder="Email address">
             
-                <label for="comment" class="sr-only">Comment</label>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
             
-                <button>post comment</button>
+                <button>submit</button>
             </form>
 
             <!-- Contact Info -->
             <div class="contactInfo">
                 <!-- Socials -->
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                <ul class="contactIcons">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                 </ul>
                 <!-- Address -->
                 <div class="info">

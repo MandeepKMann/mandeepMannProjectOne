@@ -1,0 +1,78 @@
+@use "../variables";
+
+// Contact Media Queries
+
+@media (max-width: 1500px) {
+   .contactForm {
+        input {
+            width: 100%;
+        }
+   }
+   .contactInfo {
+        padding-bottom: 175px;
+   }
+}
+
+@media (max-width: 1100px) {
+    .contactFlex {
+        flex-direction: column;
+            .contactForm {
+                position: static;
+                width: 100%;
+            }
+            .contactInfo {
+                width: 100%;
+                margin: 0 auto;
+                padding: 100px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                    .contactIcons {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 30px;
+                            i {
+                                font-size: 2.8rem;
+                            }
+                    }
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 50px;
+                    }
+            }
+    }
+}
+
+@media (max-width: 800px) {    
+    .contact {
+        h1 {
+            line-height: 6.2rem;
+        }
+    }
+    
+    .contactForm {
+        width: 100%;
+        padding: 0px;
+        box-shadow: none;
+    }
+    .contactMainBackground {
+        background-color: variables.$teal;
+    }
+
+    .contactInfo {
+        .contactIcons {
+            i {
+                color: variables.$solidWhite;
+            }
+        }
+    }
+    
+    .info {
+        p {
+            color: variables.$solidWhite;
+        }
+    }
+    
+    
+}
