@@ -1113,6 +1113,9 @@ section.links {
 .info p:nth-child(1) {
   margin-bottom: 45px;
 }
+.info p a {
+  color: unset;
+}
 
 @media (max-width: 800px) {
   .navBar .navBarFlex .navToggleLabel {
@@ -1122,6 +1125,10 @@ section.links {
     right: 10px;
     padding: 10px;
     margin: 15px 0;
+    cursor: pointer;
+  }
+  .navBar .navBarFlex .navToggleLabel:hover .hamburgerIcon, .navBar .navBarFlex .navToggleLabel:focus .hamburgerIcon, .navBar .navBarFlex .navToggleLabel:active .hamburgerIcon {
+    background-color: #0cadc0;
   }
   .navBar .navBarFlex .navToggleLabel .hamburgerIcon {
     width: 60px;
@@ -1159,7 +1166,6 @@ section.links {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: absolute;
   }
   .navToggle:checked ~ .navUl li {
     width: auto;
