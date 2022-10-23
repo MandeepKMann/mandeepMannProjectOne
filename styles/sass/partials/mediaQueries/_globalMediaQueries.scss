@@ -35,7 +35,7 @@
         align-self: center;
         justify-content: center;
         width: 100%;
-        height: 90.8vh;
+        height: 100%;
         position: absolute;
         top: 64px;
         left: 0;
@@ -43,6 +43,7 @@
         z-index: 20;
         justify-content: space-evenly;
         align-items: center;
+        position: absolute;
             li {
                 width: auto;
                 padding: 10px 0;
@@ -69,7 +70,7 @@
 
 // Header 
 
-@media (max-height: 400px) {
+@media (max-height: 700px) {
     header {
         min-height: 500px;
     }

@@ -133,6 +133,14 @@
 
 }
 
+@media (max-height: 830px) {
+    header.index {
+        min-height: 630px;
+            h2 {
+                line-height: 7rem;
+            }
+    }
+}
 
 
 @media (max-width: 800px) {
