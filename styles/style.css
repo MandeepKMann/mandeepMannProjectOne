@@ -409,7 +409,6 @@ input {
   border-bottom: 2px solid #0cadc0;
   height: 80px;
   padding-left: 30px;
-  color: #ffffff;
 }
 input::-webkit-input-placeholder {
   opacity: 1;
@@ -933,6 +932,7 @@ section.links {
 
 .commentForm input {
   background-color: #ccedfb;
+  color: #1a315c;
 }
 .commentForm input::-webkit-input-placeholder {
   color: #1a315c;
@@ -956,7 +956,7 @@ section.links {
 }
 .commentForm textarea {
   background-color: #ccedfb;
-  color: #ffffff;
+  color: #1a315c;
 }
 .commentForm textarea::-webkit-input-placeholder {
   color: #1a315c;
