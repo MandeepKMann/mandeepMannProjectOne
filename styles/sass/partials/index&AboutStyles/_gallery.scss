@@ -16,4 +16,41 @@
 .gallery li {
     width: calc((100% / 3) - 20px);
     gap: 10px;
+        img {
+            cursor: pointer;
+                &:hover,
+                &:active {
+                    border: 5px solid variables.$solidWhite;
+                }
+        }
 }   
+
+// Pop Up Gallery Styles
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 40;
+    display: none;
+        i {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            color: variables.$solidWhite;
+            font-size: 60px;
+            cursor: pointer;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid variables.$solidWhite;
+            width: 750px;
+            object-fit: cover;
+        }
+}
+
