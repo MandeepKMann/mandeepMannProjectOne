@@ -594,14 +594,14 @@ footer p {
   padding: 0;
 }
 
-.gallery li {
+.galleryImg {
   width: calc(33.3333333333% - 20px);
   gap: 10px;
 }
-.gallery li img {
+.galleryImg img {
   cursor: pointer;
 }
-.gallery li img:hover, .gallery li img:active {
+.galleryImg img:hover, .galleryImg img:active {
   border: 5px solid #ffffff;
 }
 
