@@ -90,3 +90,22 @@ textarea {
             }
 }
 
+#toTop {
+    position: fixed;
+    bottom: 16px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid variables.$blackTwo;
+    font-size: 25px;
+    color: variables.$blackTwo;
+    text-decoration: none;
+    display: none;
+}
+
+#toTop.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
