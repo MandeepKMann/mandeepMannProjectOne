@@ -54,7 +54,9 @@ scrollButton.appendChild(scrollButtonIcon);
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         scrollButton.classList.add('active');
-    };
+    } else {
+        scrollButton.classList.remove('active');
+    }
 });
 
 // have scroll button listen for click then scroll to top, smooooooooothly
