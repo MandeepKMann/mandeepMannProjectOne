@@ -42,4 +42,9 @@
     align-items: center;
 }
 
+#lightbox img {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid variables.$teal;
+}
 

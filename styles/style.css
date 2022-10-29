@@ -627,6 +627,12 @@ footer p {
           align-items: center;
 }
 
+#lightbox img {
+  max-width: 80%;
+  height: auto;
+  border: 5px solid #21404F;
+}
+
 section.links {
   background-color: #ccedfb;
 }
@@ -1277,13 +1283,13 @@ section.links {
             align-items: center;
     gap: 20px;
   }
-  .gallery li {
+  .gallery div {
     width: calc(50% - 40px);
   }
-  .gallery li img {
+  .gallery div img {
     width: 100%;
   }
-  .gallery li:nth-child(3) {
+  .gallery div:nth-child(3) {
     margin: 40px auto 0 auto;
   }
 }
@@ -1363,10 +1369,10 @@ section.links {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .gallery li {
+  .gallery div {
     width: 80%;
   }
-  .gallery li:nth-child(3) {
+  .gallery div:nth-child(3) {
     margin: 0;
   }
   .positioningFlex h2 {

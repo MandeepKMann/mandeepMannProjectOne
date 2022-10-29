@@ -51,7 +51,7 @@
         gap: 20px;
     }
 
-    .gallery li {
+    .gallery div {
         width: calc((100% / 2) - 40px);
 
         img {
@@ -60,7 +60,7 @@
 
     }
 
-    .gallery li:nth-child(3) {
+    .gallery div:nth-child(3) {
         margin: 40px auto 0 auto;
     }
 
@@ -138,11 +138,11 @@
         flex-direction: column;
     }
 
-    .gallery li {
+    .gallery div {
         width: 80%;
     }
 
-    .gallery li:nth-child(3) {
+    .gallery div:nth-child(3) {
         margin: 0;
     }
 
