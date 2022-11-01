@@ -40,6 +40,8 @@ lightbox.addEventListener('click', e => {
 
 // Scroll to the TOP!
 
+// I used a bit of https://www.youtube.com/watch?v=SJVCvnKM_lI and also https://www.youtube.com/watch?v=FK5DEa1Hvco to get this done
+
 // Create scroll button and give id and append to body
 const scrollButton = document.createElement('button');
 scrollButton.id = 'toTop'
@@ -67,7 +69,3 @@ scrollButton.addEventListener('click', () => {
         behavior: "smooth"
     });
 });
-
-
-
-
