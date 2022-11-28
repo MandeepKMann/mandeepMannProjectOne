@@ -448,6 +448,32 @@ textarea::placeholder {
   opacity: 1;
 }
 
+#toTop {
+  position: fixed;
+  bottom: 16px;
+  right: 25px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #161515;
+  font-size: 25px;
+  color: #161515;
+  text-decoration: none;
+  display: none;
+}
+
+#toTop.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 header {
   background-size: cover;
   background-repeat: no-repeat;
@@ -594,9 +620,43 @@ footer p {
   padding: 0;
 }
 
-.gallery li {
+.gallery div {
   width: calc(33.3333333333% - 20px);
   gap: 10px;
+}
+.gallery div img {
+  cursor: pointer;
+}
+.gallery div img:hover, .gallery div img:active {
+  border: 5px solid #ffffff;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#lightbox img {
+  max-width: 80%;
+  height: auto;
+  border: 5px solid #21404F;
 }
 
 section.links {
@@ -1249,13 +1309,13 @@ section.links {
             align-items: center;
     gap: 20px;
   }
-  .gallery li {
+  .gallery div {
     width: calc(50% - 40px);
   }
-  .gallery li img {
+  .gallery div img {
     width: 100%;
   }
-  .gallery li:nth-child(3) {
+  .gallery div:nth-child(3) {
     margin: 40px auto 0 auto;
   }
 }
@@ -1335,10 +1395,10 @@ section.links {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .gallery li {
+  .gallery div {
     width: 80%;
   }
-  .gallery li:nth-child(3) {
+  .gallery div:nth-child(3) {
     margin: 0;
   }
   .positioningFlex h2 {
